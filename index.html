@@ -48,15 +48,22 @@
             <div class="container">
                 <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
                     <a class="site-nav__logo" href="#">BHROMAON</a>
-                    <ul class="site-nav__list d-flex flex-column flex-md-row gap-3 list-unstyled m-0 p-0">
-                        <li><a href="#">Who We Are</a></li>
-                        <li><a href="#">What We Do</a></li>
-                        <li><a href="#">Travel With Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+                    <input type="checkbox" id="menu-toggle" class="site-nav__checkbox">
+                    <label for="menu-toggle" class="site-nav__toggle" aria-label="Open menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+
+      <ul class="site-nav__list gap-3 list-unstyled m-0 p-0">
+        <li><a href="#">Who We Are</a></li>
+        <li><a href="#">What We Do</a></li>
+        <li><a href="#">Travel With Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
     </header>
 
       <section class="why" id="why-choose-us">
@@ -73,8 +80,8 @@
 
             <div class="col-12 col-md-6">
               <div class="why__images">
-                <img src="images/image2_1.png" alt="House by the water" class="why__img--top">
-                <img src="images/image2_2.png" alt="Mountain landscape" class="why__img--bottom">
+                <img src="images/image2_1.png" alt="House by the water" class="img-fluid why__img--top">
+                <img src="images/image2_2.png" alt="Mountain landscape" class="img-fluid why__img--bottom">
               </div>
             </div>
           </div>
@@ -102,7 +109,7 @@
             <div class="col-12 col-md-4">
               <div class="steps__item">
                 <img src="images/thumb.svg" class="thumb" />
-                <p>Book &amp; Enjoy</p>
+                <p>Book & Enjoy</p>
               </div>
             </div>
           </div>
@@ -113,12 +120,12 @@
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-6">
-              <article class="promo-card">
+              <div class="promo-card">
                 <p class="promo-card__location">Spain</p>
                 <h2 class="promo-card__title">Grand Spain Madrid</h2>
                 <p class="promo-card__text">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
-                <a href="#" class="custom-button">Book Now</a>
-              </article>
+                <button class="book-button"><a href="#">Book Now</a></button>
+              </div>
             </div>
           </div>
         </div>
@@ -132,7 +139,7 @@
                 <p class="promo-card__location">Spain</p>
                 <h2 class="promo-card__title">Grand Spain Madrid</h2>
                 <p class="promo-card__text">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
-                <a href="#" class="custom-button">Book Now</a>
+                <button class="book-button"><a href="#">Book Now</a></button>
               </article>
             </div>
           </div>
@@ -141,25 +148,27 @@
 
       <section class="testimonial">
         <div class="container">
-          <h2 class="text-center testimonial__heading">What Our Tourist Say</h2>
+          <div class="text-center testimonial__heading"><h1>What Our Tourist Say</h1>
+        </div>
 
           <div class="row align-items-stretch">
+            <div class="col-12 col-md-1">
+              
+            </div>
             <div class="col-12 col-md-5">
-              <img
-                src="images/image5_1.png"
-                alt="Tourist standing outdoors"
-                class="img-fluid testimonial__image"
-              />
+              <div class="testimonial__content"><img src="images/image5_1.png" alt="Tourist standing outdoors" class="img-fluid testimonial__image"> 
+                <div class="testimonial__text">
+                    <div>
+                        <h3 class="testimonial__name">SAM SUMON</h3>
+                    </div>
+                    <div>
+                        <p class="testimonial__body"><i class="fa-solid fa-quote-left"></i>But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system was account  born and I account will give you a nai the complete account of the system</p>
+                    </div>
+                </div>
             </div>
-
-            <div class="col-12 col-md-7">
-              <div class="testimonial__content">
-                <h3>Sam Sumon</h3>
-                <p><i class="fa-solid fa-quote-left"></i>But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system was account  born and I account will give you a nai the complete account of the system</p>
-              </div>
-            </div>
-          </div>
         </div>
+    </div>
+</div>
       </section>
 
       <footer class="site-footer">
